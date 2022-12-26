@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        
+        <nav>
+            <a href="index.html"><img src="logga uterum.png" alt=""></a>
+            <div class= "nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Start</a></li>
+                    <li><a href="">Produkter</a></li>
+                    <li><a href="">Varför pergola</a></li>
+                    <li><a href="">Referenser</a></li>
+                    <li><a href="">Om oss</a></li>
+                    <li><a href="">Kontakt</a></li>
+                    
+                </ul>   
+
+            </div>
+                <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <!--Text sektion-->
+    <div class="textbox">
+        <h1>Det optimala uterummet</h1>
+        <p>Våra pergolas skapar det ultimata uterummet som skyddar mot alla väderslag.
+             En pergola med öppningbart tak skyddar mot regn, vind, snö, värme och kyla.
+             Varje pergola är unik och anpassas efter varje kunds behov.
+              Ni skräddarsyr er pergola och väljer höjd, längd, bredd, färg, glas etc.
+        </p>
+        <a href="" class="hero-btn">Läs mer</a>
+    </div>
+    <!--Varför en pergola-->
+    <section class="varfor">
+        <h1>Varför välja en Pergola?</h1>
+        <p>En pergola ger dig det bästa av två världar, 
+        på dagen öppnar du taket och släpper in solens värmande strålar för att stänga på kvällen för att skydda mot regn och kyla. 
+        För en restaurang, ett hotell eller café så innebär detta att man kan ha öppet varje dag oavsett väder.</p>
+    <div class="row">
+        <!--Öppningsbart tak-->
+        <div class="varfor-column">
+            <h3>Öppningsbart tak</h3>
+            <p>Alla våra modeller har öppningsbart tak. 
+                Även de modeller som är snöklassade.</p>
+        </div>
+        <!--Uterum-->
+        <div class="varfor-column">
+            <h3>Uterum</h3>
+            <p>Vi erbjuder ett uterum som förverkligar känslan av att sitta ute.</p>
+        </div>
+        <!--Året runt-->
+        <div class="varfor-column">
+            <h3>Använd året om</h3>
+            <p>Modellerna Kalix och Kalix P klarar snö upp till hela 450 kg/m².</p>
+        </div>
+    </div>
+    </section>
+    <!--Modeller-->
+    <section class="modell">
+        <h1>Våra modeller</h1>
+        <p>Våra pergolas är av absolut högsta kvalitet. Detta ser ni direkt när ni granskar produkterna.
+        Den italienska designen utstrålar exklusivitet och kvalitet. Vi följer branschen noggrant och säkerställer att våra produkter alltid ligger i framkant när det kommer till funktionalitet och hållbarhet.
+         Vi vill ge våra kunder maximerat värde för varje investerad krona. Vi lämnar hela 5 års garanti på våra pergolas.</p>
+        <div class="row">
+            <div class="modell-col">
+                <img src="avant.webp" alt="">
+                <div class="layer">
+                    <h3>Avantgarde</h3>
+                </div>
+            </div>
+            <div class="modell-col">
+                <img src="elegant.webp" alt="">
+                <div class="layer">
+                    <h3>Elegant</h3>
+                </div>
+            </div>
+            <div class="modell-col">
+                <img src="perg.webp" alt="">
+                <div class="layer">
+                    <h3>Bioclimatic</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!--java skript-->
+    <script>
+        var navLinks = document.getElementById('navLinks')
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+    
+</body>
+</html>
